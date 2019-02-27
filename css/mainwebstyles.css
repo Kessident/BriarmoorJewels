@@ -1,7 +1,83 @@
 /*
 #382501 - Far Background Colour
 #DEA026 - Main Background Color
-#073B41 - 
+#073B41 -
 #BE2E1F -
 #C3C4B0 -
 */
+*, *:before, *:after {
+  box-sizing: border-box;
+}
+
+* {
+  background: transparent;
+  border: 0;
+  font-size: 100%;
+  margin: 0;
+  outline: 0;
+  padding: 0;
+  vertical-align: baseline;
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  font-size: 150%;
+  background-color: #382501;
+  color: white;
+}
+
+body > div {
+  /* background-color: #C3C4B0; */
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.nav-wrapper {
+  width: 100%;
+}
+
+nav {
+  flex-grow: 1;
+  display: flex;
+  flex-direction: column;
+  height: auto;
+  min-height: 120px;
+  padding: 1.5rem;
+  margin-bottom: 1rem;
+}
+nav a {
+  padding: 0.5rem;
+  background-color: #C3C4B0;
+  color: black;
+  flex-grow: 1;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  /* padding: 1rem; */
+  border: 1px solid #073B41;
+  text-decoration: none;
+}
+
+.jcarousel {
+  overflow: hidden;
+  position: relative;
+  width: 100vw;
+}
+.jcarousel div {
+  position: relative;
+  width: 10000rem;
+}
+.jcarousel img {
+  float: left;
+  width: 100vw;
+}
+
+.artist-statement-wrapper {
+  margin-top: 1.5rem;
+  padding: 0.5rem;
+  background-color: #C3C4B0;
+  color: black;
+}

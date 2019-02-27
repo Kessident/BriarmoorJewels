@@ -10,41 +10,44 @@
 </head>
 
 <body>
-  <header>
-    Name, Description, title
-  </header>
-  <nav>
-    <a href="index.html">Home</a> |
-    <a href="jewelry.html">Jewelry</a> |
-    <a href="sculpture.html">Sculpture</a> |
-    <a href="events.html">Events</a> |
-    <a href="links.html">Links</a> |
-    <a href="other.html">Other</a>
-  </nav>
-  <br><br>
+  <div>
+    <header><br><br>
+      Name, Description, title<br><br>
+    </header>
 
-  <div class="galleryWrapper">
-    <div class="galleryImagesWrapper">
-      <img src="images/one.jpg" class="galleryImages">
-      <img src="images/two.jpg" class="galleryImages">
-      <img src="images/three.jpg" class="galleryImages">
-      <img src="images/four.jpg" class="galleryImages">
+    <div class="nav-wrapper">
+      <nav>
+        <a href="index.html">Home</a>
+        <a href="jewelry.html">Jewelry</a>
+        <a href="sculpture.html">Sculpture</a>
+        <a href="events.html">Events</a>
+        <a href="links.html">Links</a>
+        <a href="other.html">Other</a>
+      </nav>
     </div>
 
-
-
-    <!-- <div id="galleryCurrent">
-      <img src="" id="galleryCurrentImage">
+    <div class="jcarousel">
+      <div class="jcarousel-list">
+        <img src="images/one.jpg" class="jcarousel-item">
+        <img src="images/two.jpg" class="jcarousel-item">
+        <img src="images/three.jpg" class="jcarousel-item">
+        <img src="images/four.jpg" class="jcarousel-item">
+      </div>
     </div>
-    <div id="galleryNext">
-      <img src="" id="galleryNextImage">
-    </div> -->
+
+    <div class="artist-statement-wrapper">
+      <p class="artist-statement">
+        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean condimentum nulla nec augue hendrerit, sed porttitor elit dictum. Mauris non diam erat. Integer fringilla scelerisque commodo. Vestibulum maximus metus a.
+      </p>
+    </div>
+
+    <footer>
+      &copy;
+    </footer>
   </div>
 
-  <footer>
-    &copy;
-  </footer>
-
+  <script src="js/jquery-3.3.1.min.js"></script>
+  <script src="js/jquery.jcarousel.min.js"></script>
   <script src="js/index.js"></script>
 </body>
 
