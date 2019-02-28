@@ -14,6 +14,6 @@ $(function() {
 
 
 
-setInterval (function(){
+setInterval(function() {
   $('.jcarousel').jcarousel('scroll', '+=1');
-}, 10000);
+}, 4000);
