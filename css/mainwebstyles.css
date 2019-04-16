@@ -104,3 +104,33 @@ nav {
   background-color: #C3C4B0;
   color: black;
 }
+
+.gallery-image-wrapper{
+  padding: 1rem 0.5rem;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.gallery-image {
+  margin-top: 3rem;
+  /* 0.5rem padding on side on desktop? */
+  padding: 5px;
+  /* border: 1px solid #DEA026; */
+  background-color: #C3C4B0;
+  color: #073B41;
+  flex: 1 300px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.gallery-image img {
+  width: 100%;
+}
+
+.jewel-piece-title {
+  font-size: 2rem;
+}
+
+.jewel-piece-description {
+  margin-top: 1rem;
+}
