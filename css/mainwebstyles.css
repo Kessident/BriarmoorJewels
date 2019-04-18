@@ -19,6 +19,22 @@
   vertical-align: baseline;
 }
 
+header, footer {
+  background-color: #DEA026;
+  color: black;
+  width: 100%;
+  text-align: center;
+  padding: 2rem;
+}
+
+footer {
+  margin-top: 5rem;
+  font-size: 1em;
+  background-color: #C3C4B0;
+  width: 100%;
+  text-align: left;
+}
+
 body {
   display: flex;
   flex-direction: column;
@@ -54,6 +70,7 @@ nav {
   cursor: pointer;
   outline: none;
   padding: 1rem;
+  border-radius: 10px;
 }
 
 .nav-link-wrapper {
@@ -76,6 +93,7 @@ nav {
   border: 1px solid #073B41;
   text-decoration: none;
   width: 90%;
+  border-radius: 2px;
 }
 
 .menu-active, .nav-button:hover, .nav-links:hover {
@@ -99,32 +117,41 @@ nav {
 }
 
 .artist-statement-wrapper {
+  margin: 5px;
   margin-top: 1.5rem;
   padding: 0.5rem;
   background-color: #C3C4B0;
   color: black;
+  border-radius: 10px;
 }
 
-.gallery-image-wrapper{
+.gallery-image-wrapper, .events, .links {
   padding: 1rem 0.5rem;
   display: flex;
   flex-wrap: wrap;
+  justify-content: center;
+  align-items: flex-start;
+
 }
 
-.gallery-image {
+.gallery-image, .event-wrapper, .link-wrapper {
   margin-top: 3rem;
-  /* 0.5rem padding on side on desktop? */
-  padding: 5px;
-  /* border: 1px solid #DEA026; */
+  /* padding: 5px; */
   background-color: #C3C4B0;
   color: #073B41;
   flex: 1 300px;
   display: flex;
   flex-direction: column;
   align-items: center;
+  border-radius: 10px;
+
 }
-.gallery-image img {
+
+.gallery-image img, .full-image-links {
   width: 100%;
+  border-radius: 10px;
+  border-bottom-left-radius: 0;
+  border-bottom-right-radius: 0;
 }
 
 .jewel-piece-title {
@@ -132,10 +159,49 @@ nav {
 }
 
 .jewel-piece-description {
-  margin-top: 1rem;
+  margin: 0 0.5rem;
 }
 
-.jewelry-title {
+.page-title {
   font-size: 3rem;
-  /* color: ; */
+}
+
+.link-wrapper {
+  margin-top: 0.5rem;
+}
+
+@media screen and (min-width:769px) {
+  nav {
+    display: flex;
+    flex-direction: row;
+  }
+
+  .nav-button {
+    display: none;
+  }
+
+  .nav-link-wrapper {
+    flex-direction: row;
+    max-height: inherit;
+    flex: 1 1 auto;
+  }
+
+  .nav-links {
+    padding: 1rem 0;
+  }
+
+  nav {
+    margin-top: 0;
+  }
+
+  .jcarousel{
+    height: 70vh;
+    width: 50vw;
+  }
+
+  .gallery-image, .event-wrapper, .link-wrapper {
+    margin: 0.5rem;
+    /* flex: 1 10px; */
+    /* width: 50px; */
+  }
 }
