@@ -189,6 +189,9 @@ nav {
   padding: 5px;
 }
 
+.sitemap-smaller {
+  max-width: 80%;
+}
 @media screen and (min-width:769px) {
   nav {
     display: flex;
