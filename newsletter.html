@@ -16,7 +16,7 @@
   <meta name="twitter:url" content="https://www.briarmoorjewels.com/">
   <meta name="twitter:image" content="">
   <meta name="twitter:description" content="Art jewelry and sculpture individually hand-fabricated using traditional metalsmithing and stone setting techniques.">
-  <title>Briarmoor Jewels - Sitemap</title>
+  <title>Briarmoor Jewels - Events</title>
   <link rel="stylesheet" href="css/mainwebstyles.css">
   <link rel="shortcut icon" href="favicon.ico">
 </head>
@@ -41,49 +41,31 @@
       </nav>
     </div>
 
-    <h1 class="page-title">Sitemap</h1>
+    <h1 class=page-title>Newsletter</h1>
 
-    <div class="links">
-      <div class="link-wrapper">
-        <p><a href="index.html">Home</a></p>
-      </div>
+    <div class="newsletter">
+      <form class="newsletterForm" id="newsletterForm" action="sitemap.html" method="post">
+        <label for="nameInput">*Name: </label>
+        <input required type="text" name="nameInput" id="nameInput" placeholder="John Smith"><br>
 
-      <div class="link-wrapper">
-        <p><a href="jewelry.html">Jewelry</a></p>
-      </div>
+        <fieldset><legend>*Contact Info</legend>
+          <label for="emailInput">Email: </label>
+          <input type="email" name="emailInput" id="emailInput" placeholder="email@email.email"><br>
+          or <br>
+          <label for="telInput">Phone: </label>
+          <input type="tel" name="telInput" id="telInput" placeholder="123-456-7890"><br>
+        </fieldset>
 
-      <div class="link-wrapper sitemap-smaller">
-        <p><a href="rings.html">Rings</a></p>
-      </div>
-      <div class="link-wrapper sitemap-smaller">
-        <p><a href="bracelets.html">Bracelets</a></p>
-      </div>
-      <div class="link-wrapper sitemap-smaller">
-        <p><a href="necklaces.html">Necklaces</a></p>
-      </div>
-      <div class="link-wrapper sitemap-smaller">
-        <p><a href="earrings.html">Earrings</a></p>
-      </div>
+        <label id="forPassInput" for="passInput">*Robot Check, What's my title: </label>
+        <input requred type="password" name="passInput" id="passInput"><br>
+        <label for="agreementInput">*</label>
+        <input required type="checkbox" name="agreementInput" id="agreementInput" value="privacyPolicy">
+        I agree to the terms of the privacy policy outlined <a href="termsfeed-privacy-policy-html-english.html">here</a><br>
 
-      <div class="link-wrapper">
-        <p><a href="sculpture.html">Sculpture</a></p>
-      </div>
-
-      <div class="link-wrapper">
-        <p><a href="events.html">Events</a></p>
-      </div>
-
-      <div class="link-wrapper">
-        <p><a href="links.html">Links</a></p>
-      </div>
-
-      <div class="link-wrapper">
-        <p><a href="other.html">Other</a></p>
-      </div>
-
-      <div class="link-wrapper">
-        <p><a href="newsletter.html">Newsletter</a></p>
-      </div>
+        <input type="reset" name="resetButton" value="Reset">
+        <input type="submit" name="submitButton" value="Submit">
+        <p class="legalese">Fields marked with a '*' are mandatory</p>
+      </form>
     </div>
 
     <footer>
@@ -93,7 +75,7 @@
   </div>
 
   <script src="js/main.js"></script>
-
+<script src="js/newsletter.js"></script>
 </body>
 
 </html>
