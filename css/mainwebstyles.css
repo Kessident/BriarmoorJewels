@@ -4,6 +4,7 @@
 #073B41 -
 #BE2E1F -
 #C3C4B0 -
+#727456
 */
 *, *:before, *:after {
   box-sizing: border-box;
@@ -191,6 +192,28 @@ nav {
 
 .sitemap-smaller {
   max-width: 80%;
+}
+
+.event-table-row th{
+  background-color: #555741;
+  font-size: 1.5rem;
+  padding: 5px;
+}
+
+.event-table-row td {
+  padding: 5px;
+}
+.event-table-row:nth-of-type(odd) {
+  background-color: #979876;
+}
+
+.event-table-row:nth-of-type(even) {
+  background-color: #C3C4B0;
+  color: #073B41;
+}
+
+.event-table-row {
+  text-align: center;
 }
 @media screen and (min-width:769px) {
   nav {
