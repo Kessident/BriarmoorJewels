@@ -186,7 +186,8 @@ nav {
 }
 
 .jewel-piece-description {
-  margin: 0 0.5rem;
+  margin: 0.5rem;
+  margin-top: 0;
 }
 
 .page-title {
