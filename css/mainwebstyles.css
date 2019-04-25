@@ -164,11 +164,16 @@ nav {
   border-radius: 10px;
 }
 
+.gallery-image .gallery-image {
+  margin-top: 0.5rem;
+}
+
 .gallery-image img, .full-image-links {
   width: 100%;
   border-radius: 10px;
   border-bottom-left-radius: 0;
   border-bottom-right-radius: 0;
+  text-decoration: none;
 }
 
 .jewel-piece-title {
