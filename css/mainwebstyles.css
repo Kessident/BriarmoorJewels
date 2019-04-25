@@ -154,7 +154,6 @@ nav {
 
 .gallery-image, .event-wrapper, .link-wrapper {
   margin-top: 3rem;
-  /* padding: 5px; */
   background-color: #C3C4B0;
   color: #073B41;
   flex: 1 300px;
@@ -165,7 +164,13 @@ nav {
 }
 
 .gallery-image .gallery-image {
+  margin: 0;
   margin-top: 0.5rem;
+}
+
+.gallery-image .gallery-image img {
+  border-bottom-left-radius: 10px;
+  border-bottom-right-radius: 10px;
 }
 
 .gallery-image img, .full-image-links {
